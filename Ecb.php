@@ -12,7 +12,7 @@ class Ecb extends AbstractImport {
 	 * @return float
 	 */
 	protected function _convert($currencyFrom, $currencyTo) {
-		return df_float(df_a($this->rates($currencyFrom), $currencyTo, 0.0));
+		return df_float(dfa($this->rates($currencyFrom), $currencyTo, 0.0));
 	}
 
 	/**
@@ -22,7 +22,7 @@ class Ecb extends AbstractImport {
 	 */
 	private function rates($base) {
 		if (!isset($this->{__METHOD__}[$base])) {
-			$this->{__METHOD__}[$base] = df_a(@df_json_decode(df_http_get(
+			$this->{__METHOD__}[$base] = dfa(@df_json_decode(df_http_get(
 				'http://api.fixer.io/latest', ['base' => $base])
 			), 'rates', []);
 		}
