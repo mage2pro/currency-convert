@@ -23,7 +23,7 @@ class Ecb extends AbstractImport {
 	private function rates($base) {
 		if (!isset($this->{__METHOD__}[$base])) {
 			$this->{__METHOD__}[$base] = dfa(
-				df_http_json('http://api.fixer.io/latest', ['base' => $base], [])
+				df_http_json('http://api.fixer.io/latest', ['base' => $base])
 			, 'rates', []);
 		}
 		return $this->{__METHOD__}[$base];
