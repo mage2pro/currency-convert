@@ -1,7 +1,7 @@
 {
 	"name": "mage2pro/currency-convert"
 	,"version": "1.0.1"
-	,"description": "The «European Central Bank Currency Converter» extension."
+	,"description": "The «European Central Bank Currency Converter» extension for Magento 2."
 	,"type": "magento2-module"
 	,"homepage": "https://mage2.pro/t/375"
 	,"license": "proprietary"
