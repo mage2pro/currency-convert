@@ -13,4 +13,14 @@
 	}]
 	,"require": {"mage2pro/core": ">=2.4.20"}
 	,"autoload": {"files": ["registration.php"], "psr-4": {"Dfe\\CurrencyConvert\\": ""}}
+	,"keywords": [
+		"Currency"
+		,"Currency converter"
+		,"eCommerce"
+		,"European Central Bank"
+		,"Fixer.io"
+		,"Magento"
+		,"Magento 2"
+		,"Magento extension"
+	]
 }
