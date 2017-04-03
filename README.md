@@ -2,8 +2,14 @@ The «[**European Central Bank Currency Converter**](https://mage2.pro/t/375)» 
 
 ![](https://mage2.pro/uploads/default/original/1X/e1cec0d1a2bb931c266cc4f312e4e2d850ad94e2.png)
 
-## Installation 
-Follow the generic [installation instruction](https://mage2.pro/t/263). 
+## How to install
+```
+composer require mage2pro/currency-convert:*
+bin/magento setup:upgrade
+rm -rf pub/static/* && bin/magento setup:static-content:deploy
+rm -rf var/di var/generation && bin/magento setup:di:compile
+```
+If you have some problems while executing these commands, then check the [detailed instruction](https://mage2.pro/t/263).
 
 ## Support
 - [The extension's **forum** branch](https://mage2.pro/t/375).
