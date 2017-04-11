@@ -27,7 +27,8 @@ I provide the [**customization service**](https://mage2.pro/t/2020) for my payme
 
 - «[**2Checkout**](https://mage2.pro/c/extensions/2checkout)» payment extension.
 - «[**歐付寶 allPay**](https://mage2.pro/c/extensions/allpay)» payment extension (Taiwan).
-- «[**Checkout.com**](https://mage2.pro/c/extensions/checkout-com)» payment extension
+- «[**Checkout.com**](https://mage2.pro/c/extensions/checkout-com)» payment extension.
+- «[**Dragonpay**](https://mage2.pro/c/extensions/dragonpay)» payment extension (Philippines).
 - «[**Ginger Payments**](https://mage2.pro/c/extensions/ginger-payments)» extension (the Netherlands, Belgium).
 - «[**iPay88**](https://mage2.pro/c/extensions/ipay88)» payment extension (Malaysia, Indonesia, Philippines, Thailand, Singapore, China).
 - «[**iyzico**](https://mage2.pro/c/extensions/iyzico)» payment extension (Turkey).
@@ -43,6 +44,7 @@ I provide the [**customization service**](https://mage2.pro/t/2020) for my payme
 - «[**Spryng**](https://mage2.pro/c/extensions/spryng)» payment extension (the European Union).
 - «[**Square**](https://mage2.pro/c/extensions/square)» payment extension (USA, Canada).
 - «[**Stripe**](https://mage2.pro/c/extensions/stripe)» payment extension.
+
 ## See also my other Magento 2 extensions:
 
 - «[**Price Format**](https://mage2.pro/c/extensions/price-format)» (set a custom display format for the prices and other currency values: discounts, taxes, sales amounts).
