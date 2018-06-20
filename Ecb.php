@@ -1,5 +1,6 @@
 <?php
 namespace Dfe\CurrencyConvert;
+use Dfe\CurrencyConvert\Settings as S;
 use Magento\Directory\Model\Currency\Import\AbstractImport;
 class Ecb extends AbstractImport {
 	/**
@@ -21,6 +22,11 @@ class Ecb extends AbstractImport {
 	 * @return array(string => float)
 	 */
 	private function rates($base) {return dfc($this, function($base) {return dfa(
-		df_http_json('http://api.fixer.io/latest', ['base' => $base]), 'rates', []
+		// 2018-06-20
+		// We should use `http` (not `https`) to avoid the error:
+		// «Access Restricted - Your current Subscription Plan does not support HTTPS Encryption.»
+		df_http_json('http://data.fixer.io/api/latest', [
+			'access_key' => S::s()->accessKey(), 'base' => $base
+		]), 'rates', []
 	);}, [$base]);}
 }

@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<config
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd"
+>
+	<system>
+		<section
+			id='df_api'
+			showInDefault='1' showInStore='1' showInWebsite='1'
+			translate='label'
+		>
+			<tab>_df</tab>
+			<label>APIs</label>
+			<class>separator-top</class>
+			<!-- 2015-10-05 https://mage2.pro/t/114 -->
+			<resource>Df_Api::config</resource>
+<!-- 2015-09-25, 2017-10-22
+Magento 2 is not capable to automatically order settings groups
+in the backend «Stores» → «Configuration» left menu by alphabet.
+To achieve such ordering, I use the following 2 rules to assign a `sortOrder` value to a settings group:
+1) The 1-st and 2-nd digits of a `sortOrder` value
+are the digits of the ordering number of the 1-st letter of the module's label in the English alphabet:
+https://en.wikipedia.org/w/index.php?title=English_alphabet&oldid=819841239
+2) The 3-rd and 4-nd digits of a `sortOrder` value
+are the digits of the ordering number of the 2-nd letter of the module's label in the English alphabet.
+===
+An example:
+A label is «Stripe».
+The first letter is «S». It is the 19-nd letter of the English alphabet.
+The second letter is «t». It is the 20-nd letter of the English alphabet.
+So the `sortOrder` value is 1920. -->
+			<group
+				id='fixer'
+				showInDefault='1' showInStore='1' showInWebsite='1'
+				sortOrder='609'
+				translate='label'
+			>
+			<label>Fixer.io</label>
+				<field
+					id='accessKey'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='1'
+					translate='label'
+					type='obscure'
+				>
+					<label>Access Key</label>
+					<comment><![CDATA[<a href="https://github.com/fixerAPI/fixer/blob/5d7a8986/README.md#readme">How to get it?</a>]]></comment>
+					<backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
