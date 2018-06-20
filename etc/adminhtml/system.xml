@@ -37,6 +37,16 @@ So the `sortOrder` value is 1920. -->
 			>
 			<label>Fixer.io</label>
 				<field
+					id='customAccessKey'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='1'
+					translate='label'
+					type='Df\Framework\Form\Element\Checkbox'
+				>
+					<label>Use a custom Access Key?</label>
+					<backend_model>Df\Config\Backend\Checkbox</backend_model>
+				</field>
+				<field
 					id='accessKey'
 					showInDefault='1' showInStore='1' showInWebsite='1'
 					sortOrder='1'
@@ -46,6 +56,7 @@ So the `sortOrder` value is 1920. -->
 					<label>Access Key</label>
 					<comment><![CDATA[<a href="https://github.com/fixerAPI/fixer/blob/5d7a8986/README.md#readme">How to get it?</a>]]></comment>
 					<backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+					<depends><field id='customAccessKey'>1</field></depends>
 				</field>
 			</group>
 		</section>
