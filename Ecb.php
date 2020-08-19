@@ -22,9 +22,9 @@ class Ecb extends AbstractImport {
 	 * @return array(string => float)
 	 */
 	private function rates($base) {return dfc($this, function($base) {return dfa(
-		// 2018-06-20
-		// We should use `http` (not `https`) to avoid the error:
-		// «Access Restricted - Your current Subscription Plan does not support HTTPS Encryption.»
+		# 2018-06-20
+		# We should use `http` (not `https`) to avoid the error:
+		# «Access Restricted - Your current Subscription Plan does not support HTTPS Encryption.»
 		df_http_json('http://data.fixer.io/api/latest', [
 			'access_key' => S::s()->accessKey(), 'base' => $base
 		]), 'rates', []

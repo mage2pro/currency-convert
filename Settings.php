@@ -1,6 +1,6 @@
 <?php
 namespace Dfe\CurrencyConvert;
-// 2018-06-20
+# 2018-06-20
 /** @method static Settings s() */
 final class Settings extends \Df\Config\Settings {
 	/**
