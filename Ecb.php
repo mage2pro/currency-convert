@@ -8,13 +8,11 @@ class Ecb extends AbstractImport {
 	 * @override
 	 * @see \Magento\Directory\Model\Currency\Import\AbstractImport::_convert()
 	 * @used-by \Magento\Directory\Model\Currency\Import\AbstractImport::fetchRates()
-	 * @param string $currencyFrom
-	 * @param string $currencyTo
+	 * @param string $from
+	 * @param string $to
 	 * @return float
 	 */
-	protected function _convert($currencyFrom, $currencyTo) {
-		return df_float(dfa($this->rates($currencyFrom), $currencyTo, 0.0));
-	}
+	protected function _convert($from, $to) {return df_float(dfa($this->rates($from), $to, 0.0));}
 
 	/**
 	 * 2016-01-01
