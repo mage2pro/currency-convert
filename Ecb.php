@@ -16,10 +16,9 @@ class Ecb extends AbstractImport {
 
 	/**
 	 * 2016-01-01
-	 * @param string $base
 	 * @return array(string => float)
 	 */
-	private function rates($base) {return dfc($this, function($base) {return dfa(
+	private function rates(string $base) {return dfc($this, function($base) {return dfa(
 		# 2018-06-20
 		# We should use `http` (not `https`) to avoid the error:
 		# «Access Restricted - Your current Subscription Plan does not support HTTPS Encryption.»
