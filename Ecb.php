@@ -5,6 +5,7 @@ use Magento\Directory\Model\Currency\Import\AbstractImport;
 class Ecb extends AbstractImport {
 	/**
 	 * 2016-01-01
+	 * 2022-12-24 We can not declare arguments types because they are undeclared in the overriden method.
 	 * @override
 	 * @see \Magento\Directory\Model\Currency\Import\AbstractImport::_convert()
 	 * @used-by \Magento\Directory\Model\Currency\Import\AbstractImport::fetchRates()
