@@ -4,7 +4,7 @@ The module is **free** and **open source**.
 ![](https://mage2.pro/uploads/default/original/1X/e1cec0d1a2bb931c266cc4f312e4e2d850ad94e2.png)
 
 ## How to install
-[Hire me in Upwork](https://www.upwork.com/fl/mage2pro), and I will: 
+[Hire me in Upwork](https://upwork.com/fl/mage2pro), and I will: 
 - install and configure the module properly on your website
 - answer your questions
 - solve compatiblity problems with third-party checkout, shipping, marketing modules
